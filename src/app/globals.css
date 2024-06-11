@@ -16,7 +16,8 @@
       --primary: 222.2 47.4% 11.2%;
       --primary-foreground: 210 40% 98%;
 
-      --luna-primary
+      --luna-primary: #F44C41;
+      --luna-secondary: #8D8B8B;
 
       --secondary: 210 40% 96.1%;
       --secondary-foreground: 222.2 47.4% 11.2%;

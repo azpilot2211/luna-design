@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('../../public/bg40.webp')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -74,7 +77,27 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#F44C41",
+          "secondary": "#4D1427",
+          "accent": "#FED21B",
+          "neutral": "#ff00ff",
+          "base-100": "#4D1427",
+          "info": "#3C71E7",
+          "success": "#00ff00",
+          "warning": "#00ff00",
+          "error": "#ff0000",
+        },
+      },
+    ],
+  },
+  plugins: [
+    require("tailwindcss-animate"),
+    require('daisyui'),
+  ],
 } satisfies Config
 
 export default config
